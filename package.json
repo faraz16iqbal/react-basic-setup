@@ -4,7 +4,8 @@
   "description": "Boilerplate for React Applications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
   },
   "author": "Faraz Iqbal",
   "license": "MIT",

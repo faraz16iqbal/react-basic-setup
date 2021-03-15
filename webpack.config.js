@@ -7,6 +7,10 @@ module.exports = {
     path: path.join(__dirname, "/dist"),
     filename: "index_bundle.js",
   },
+  devServer: {
+    hot: true,
+    open: true,
+  },
   module: {
     rules: [
       {
@@ -18,9 +22,10 @@ module.exports = {
       },
     ],
   },
-  plugin: [
+  plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
   ],
+  stats: "errors-warnings",
 };
